@@ -1,5 +1,12 @@
 const express = require('express');
 const app = express();
+app.listen(process.env.PORT || 3000 , ()=>{
+  console.log('im listenning ^^')
+})
+
+
+
+
 const ejs = require('ejs')
 const bodyParser = require('body-parser');
 const session = require('express-session')
@@ -37,6 +44,3 @@ app.get('/logout' , (req,res)=>{
 	res.redirect('/login')
 })
 
-app.listen(process.env.PORT || 3000 , ()=>{
-  console.log('im listenning ^^')
-})
