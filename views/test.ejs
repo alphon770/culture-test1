@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<%- include('nav') %>
+
+<div class="title-cont">
+<h1>Quizz de culture générale</h1>
+</div>
+
+
+
+<form id="test-form" method="post" action="/test">
+
+
+ <h3>2 + 2 =?</h3>
+	<input id="1"  name="number" type="radio" value="four"/>
+	<label for="1">4</label>
+	<br>
+	 <input id="2" name="number" type="radio" value="six"/>
+	 <label for="2">6</label>
+	 <br><br>
+
+
+<h3>Que fête-t-on le 1er mai ?</h3>
+	<input  name="fete" type="radio" value="travail" /> Travail <br />
+	<input name="fete" type="radio" value="femme" /> Fete des femmes <br /><br>
+
+
+<h3>Les patates ?</h3>
+	<input  value="legume" name="patates " type="radio" value="legume"/> Legumes ? <br/> 
+	<input name="patates " value="fruit" type="radio" value="fruit" /> Fruits? <br/><br>
+
+
+<h3>Maroc a aquis son independance</h3>
+	<input name="independance" type="radio" value="already" /> 2020 <br /> 
+	<input name="independance" type="radio" value="notyet" /> pas encore <br /><br>
+
+
+<h3>Kpop</h3>
+	<input name="music" type="radio" value="korea" /> music coreene <br /> 
+	<input name="music" type="radio" value="china" /> music chinoise <br /><br>  
+
+
+<h3>Pays le plus populé?</h3>
+	<input name="pays" type="radio" value="inde" /> Inde <br /> 
+	<input name="pays" type="radio" value="chine" /> Chine <br />  <br>
+
+
+<h3>La puissance mandiale ?</h3>
+	<input name="usa" type="radio" value="usa" /> USA <br /> 
+	<input name="usa" type="radio" value="maroc" /> Maroc <br />  <br>
+
+
+<h3>Senegal ?</h3>
+	<input name="senegal" type="radio" value="azi" /> 3zawa <br /> 
+	<input name="senegal" type="radio" value="byad" /> Boyade <br />  <br>
+
+
+<input type="submit" value="send">
+
+
+</form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My app</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/1ec0e8739c.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<ul class="nav bg-dark justify-content-center">
+	<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+	<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+	<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+</ul>
+
+<% if(!id) {%>
+  <div class="user">
+    <a href="/login" class="nav-link"><i class="fas fa-sign-out-alt"></i>Login</a>
+	<a href="/register" class="nav-link"> <i class="fas fa-registered"></i> Register</a>
+  </div>
+<%}%>
+
+<% if(id) {%>
+  <div class="user">
+    <a href="/logout" class="nav-link"><i class="fas fa-sign-out-alt"></i>Logout</a>    
+
+    <a href="/test" class="nav-link"><i class="fas fa-sign-out-alt"></i>Start the test</a>
+  </div>
+  <%}%>
+
+
+
+
+
+  <style type="text/css">
+  	.user{
+  		display: flex;
+  		justify-content: flex-end;
+  		position: relative;
+  		
+  	}
+ .nav-link{
+  		color: white
+
+  	}
+
+  	.nav-link:hover {
+  		color: silver
+  	}
+
+  	.user .nav-link {
+  		color: black
+  	}
+
+
+  	.title-cont {
+  		height: 150px;
+  		width: 100%;
+  		background-color: teal;
+  		display: flex;
+  		align-items: center;
+  	}
+
+  	.title-cont h1 {
+  		color: white;
+  		margin-left: 20%
+  	}
+
+  	.exp {
+  		width: 60%;
+  		margin-left: 15%;
+  		font-size: 1.2em;
+  		margin-top: 50px
+  	}
+
+  	h2 {
+  		margin-left: 10%
+  	}
+  	.log-reg {
+  		display: flex;
+  		justify-content: space-around;
+  		width: 100%;
+  		margin-right: auto;
+  		margin-left: auto;
+  	}
+
+    form .user-form {
+      width: 30%;
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      margin-left: -15%;
+      background-color: silver
+    }
+   .user-form input {
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 10px;
+      height: 40px;
+      padding-left: 5px;
+      background-color: black;
+      border: 2px black solid;
+      outline: none;
+      color: white
+
+    }
+
+    .user-form input:focus {
+      background-color: silver
+    }
+
+    #fileToUpload {
+      border: none;
+    }
+
+  #test-form {
+      width: 40%;
+      position: absolute;
+      left: 50%;
+      margin-left: -20% ;
+      background-color: azure;
+      padding: 10px;
+    }
+  </style>
