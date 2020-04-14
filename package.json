@@ -4,9 +4,7 @@
   "description": "graph some data ",
   "main": "index.js",
   "scripts": {
-    "scripts": {
       "start": "node app.js"
-    }
   },
   "author": "ayoub",
   "license": "ISC",
